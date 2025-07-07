@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 100% 98%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 42 100% 97%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 42 100% 97%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 20 14.3% 4.1%;
+    --primary-foreground: 42 100% 98%;
+    --secondary: 35 100% 95%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 35 100% 95%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 35 100% 95%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 42 100% 98%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-cafe-cream text-stone-800;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cafe-golden;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cafe-bronze rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cafe-bronze-dark;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Premium gradient overlays */
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.05) 0%, rgba(156, 175, 136, 0.05) 100%);
+  pointer-events: none;
+}
+
+/* Elegant text shadows */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
