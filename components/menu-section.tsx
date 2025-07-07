@@ -47,7 +47,7 @@ export default function MenuSection({ section, showAddToCart = false }: MenuSect
   return (
     <div className="mb-20">
       <div className="text-center mb-12">
-        <div className="bg-cafe-sage rounded-3xl p-8 max-w-3xl mx-auto shadow-xl border-2 border-cafe-cream">
+        <div className="bg-cafe-taupe rounded-3xl p-8 max-w-3xl mx-auto shadow-xl border-2 border-cafe-cream">
           <h2 className="text-4xl font-medium text-stone-700 mb-2 text-shadow">
             <span className="text-cafe-bronze">{section.title}</span>
           </h2>

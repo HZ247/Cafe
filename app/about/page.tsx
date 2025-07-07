@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-cafe-cream">
+    <div className="min-h-screen bg-cafe-taupe">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -15,7 +15,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <div className="bg-cafe-sage rounded-3xl p-4 shadow-lg border-2 border-cafe-sage-dark">
+              <div className="bg-cafe-sage rounded-3xl p-4 shadow-lg border-2 border-cafe-cream">
                 <Image
                   src="/interior2.png?height=400&width=600"
                   alt="Café interior with natural light"
@@ -25,7 +25,7 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-            <div className="space-y-6 bg-cafe-sage rounded-3xl p-8 shadow-lg border-2 border-cafe-peach-dark">
+            <div className="space-y-6 bg-cafe-sage rounded-3xl p-8 shadow-lg border-2 border-cafe-cream">
               <h2 className="text-3xl font-bold text-stone-600">Our Story</h2>
               <p className="text-cafe-cream font-semibold leading-relaxed">
                 Born from a passion for creating the perfect afternoon escape, 3PM Café embodies the essence of that
@@ -64,7 +64,7 @@ export default function AboutPage() {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="bg-cafe-green hover:bg-cafe-green-dark text-white px-8 py-3 rounded-full">
+            <Button size="lg" className="bg-cafe-bronze border-cafe-cream hover:bg-cafe-bronze-dark text-white  px-8 py-3 rounded-full">
               Visit Our Menu
             </Button>
           </div>

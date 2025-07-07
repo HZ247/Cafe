@@ -3,7 +3,7 @@ import { menuData } from "@/lib/menu-data"
 
 export default function MenuPage() {
   return (
-    <div className="min-h-screen bg-cafe-taupe gradient-overlay">
+    <div className="min-h-screen bg-cafe-sage gradient-overlay">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           

@@ -14,11 +14,11 @@ export default function GalleryPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-50 to-white">
+    <div className="min-h-screen bg-cafe-sage">
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-light text-stone-800 mb-6">Gallery</h1>
-          <p className="text-xl text-stone-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-light text-cafe-bronze mb-6">Gallery</h1>
+          <p className="text-xl text-cafe-golden max-w-2xl mx-auto">
             Step into our world of light, flavor, and memorable moments
           </p>
         </div>
@@ -29,13 +29,16 @@ export default function GalleryPage() {
               key={index}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Image
-                src={image.src || "/placeholder.svg"}
-                alt={image.alt}
-                width={600}
-                height={400}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              {/* Apply frame like About page */}
+              <div className="bg-cafe-taupe rounded-3xl p-4 shadow-lg border-2 border-cafe-cream">
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300 rounded-2xl"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
                   <p className="text-sm font-medium">{image.category}</p>

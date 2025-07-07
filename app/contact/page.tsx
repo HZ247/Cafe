@@ -4,11 +4,11 @@ import Link from "next/link"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-50 to-white">
+    <div className="min-h-screen bg-cafe-sage">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-light text-stone-800 mb-6">Visit Us</h1>
+            <h1 className="text-4xl md:text-5xl font-light text-cafe-bronze mb-6">Visit Us</h1>
             <p className="text-xl text-stone-600">
               Find us in the heart of the city, where great coffee meets great company
             </p>
@@ -16,9 +16,9 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+              <div className="bg-cafe-taupe rounded-2xl p-8 shadow-sm border border-cafe-cream">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-stone-600 mt-1" />
+                  <MapPin className="w-6 h-6 text-cafe-sage-dark mt-1" />
                   <div>
                     <h3 className="text-xl font-medium text-stone-800 mb-2">Location</h3>
                     <p className="text-stone-600 leading-relaxed">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+              <div className="bg-cafe-taupe rounded-2xl p-8 shadow-sm border border-stone-100">
                 <div className="flex items-start space-x-4">
                   <Phone className="w-6 h-6 text-stone-600 mt-1" />
                   <div>
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+              <div className="bg-cafe-taupe rounded-2xl p-8 shadow-sm border border-stone-100">
                 <div className="flex items-start space-x-4">
                   <Clock className="w-6 h-6 text-stone-600 mt-1" />
                   <div>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
+              <div className="bg-cafe-taupe rounded-2xl p-8 shadow-sm border border-stone-100">
                 <div className="flex items-start space-x-4">
                   <Instagram className="w-6 h-6 text-stone-600 mt-1" />
                   <div>
@@ -68,16 +68,16 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="text-stone-600 hover:text-stone-800 transition-colors"
                     >
-                      @3pmcafe
+                      @cafe3pm_khambhat
                     </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-stone-100 rounded-2xl p-8">
+            <div className="bg-cafe-taupe rounded-2xl p-8">
               <h3 className="text-2xl font-light text-stone-800 mb-6">Get Directions</h3>
-              <div className="h-[500px] bg-stone-200 rounded-xl mb-6 flex items-center justify-center">
+              <div className="h-[500px] bg-cafe-taupe rounded-xl mb-6 flex items-center justify-center">
                 <iframe
                   title="3PM Café Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.7994771521826!2d72.6293561!3d22.3234222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f0700175b544d%3A0x7b2dca4af24ea22f!2sCAFE3PMKHAMBHAT!5e0!3m2!1sen!2sin!4v1751736364938!5m2!1sen!2sin"
